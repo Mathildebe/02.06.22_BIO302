@@ -40,4 +40,16 @@ ggplot(data = penguins,
   theme_bw()
 
 
+# New plot
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y =body_mass_g, shape = species, colour = species)) +
+  geom_point() +
+  labs(x = "Body mass, g", y = "Bill length, mm", colour = "Species") +
+  theme_bw()
 
+# New plot
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, y =body_mass_g, shape = species)) +
+  geom_point() +
+  labs(x = "Body mass, g", y = "Bill length, mm", colour = "Species") +
+  theme_bw()
